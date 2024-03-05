@@ -35,7 +35,7 @@ body {
   align-items: center;
   text-align: center;
   color: white;
-  display: none;
+  /* display: none; */
 }
 #loader h1 {
   font-size: 6.9vw;
