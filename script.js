@@ -4,7 +4,7 @@ const scroll = new LocomotiveScroll({
   lerp: 0.1,
 });
 
-document.querySelector("#footer .btt").addEventListener("click", function () {
+document.querySelector("#footer #btt").addEventListener("click", function () {
   scroll.scrollTo(0);
 });
 
@@ -21,8 +21,8 @@ function loader() {
     "#loader video",
     {
       top: "-100%",
-      delay: 0.5,
-      duration: 0.4,
+      delay: 0.4,
+      duration: 0.5,
       ease: "expo.out",
     },
     "anim"
@@ -41,16 +41,20 @@ function loader() {
     "#loader",
     {
       opacity: 0,
-      delay: 0.4,
-      duration: 0.4,
+      delay: 0.3,
+      duration: 2,
       ease: "expo.out",
     },
     "anim"
   );
-  tl.to("#loader", {
-    display: "none",
-    delay: 0.01,
-  });
+  tl.to(
+    "#loader",
+    {
+      display: "none",
+      delay: 0.01,
+    },
+    "anim"
+  );
 }
 loader();
 
