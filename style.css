@@ -5,11 +5,10 @@
   src: url(font/Gilroy-Medium.woff2);
 }
 
-/* @font-face {
+@font-face {
   font-family: freight big pro;
-  font-weight: 100;
   src: url(font/Freight\ Big\ Pro\ Medium.woff2);
-} */
+}
 
 * {
   margin: 0;
@@ -189,7 +188,7 @@ nav #navright {
   transform: translate(0, -45%) scaleY(0);
   /* display: inline-block; */
   /* opacity: 0; */
-  padding: 8px 0px;
+  padding: 0.8vw 0vw;
   transition: all ease 0.3s;
 }
 .moving .blurbg {
@@ -255,14 +254,14 @@ nav #navright {
 .image-container {
   padding: 8.7px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .image-div {
-  margin: 14px;
+  margin-bottom: 1vw;
   height: 38vw;
   width: 31vw;
-  /* background-color: rebeccapurple; */
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -272,6 +271,13 @@ nav #navright {
   height: 100%;
   width: 100%;
   transition: all ease 0.5s;
+}
+
+.line {
+  padding: 0.5vw;
+}
+.middle {
+  height: 38.5vw;
 }
 
 .overlay {
@@ -391,7 +397,17 @@ nav #navright {
   #navright h3 {
     display: none;
   }
-
+  #loader {
+    height: 95vh;
+    width: 100%;
+  }
+  #loader h1 {
+    width: 80%;
+    font-size: 10vw;
+    font-weight: 100;
+    line-height: 10vw;
+    letter-spacing: -1px;
+  }
   #page1 {
     height: 95vh;
   }
@@ -417,5 +433,70 @@ nav #navright {
     line-height: 20vw;
     font-size: 16vw;
     font-weight: 500;
+  }
+
+  #page3 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2vw;
+  }
+
+  .image-container {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .line {
+    padding: 2vw;
+    width: 100%;
+  }
+
+  .image-div {
+    margin-bottom: 3vw;
+    height: 60%;
+    width: 100%;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .overlay p {
+    font-size: 5vw;
+  }
+  .middle {
+    height: 40vh;
+  }
+  #footer {
+    height: 40vh;
+    width: 100%;
+    gap: 2vw;
+  }
+  #footer #foot1 {
+    height: 50%;
+    width: 100%;
+  }
+
+  #btt {
+    padding: 2vw;
+  }
+  #btt h3 {
+    font-family: gil;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+  #footer #foot2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  #foot2 #footright {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0vw;
   }
 }
