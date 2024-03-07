@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const scroll = new LocomotiveScroll({
     el: document.querySelector("#main"),
     smooth: true,
-    lerp: 0.1,
+    lerp: 0.04,
   });
 
   document.querySelector("#footer #btt").addEventListener("click", function () {
@@ -81,6 +81,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function changeBackground() {
       page2.style.backgroundImage = `url(${bgImages[bgIndex]})`;
+
+      // page2.querySelector(
+      //   ".elem .moving"
+      // ).style.transform = `translate(0, -45%) scaleY(1)`;
+      // page2.querySelector(".elem .moving .moving-in h5").style.opacity = 1;
+
       bgIndex = (bgIndex + 1) % bgImages.length;
     }
 
