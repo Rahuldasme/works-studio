@@ -276,6 +276,9 @@ nav #navright {
 .line {
   padding: 0.5vw;
 }
+.middleline {
+  margin-top: 5vw;
+}
 .middle {
   height: 38.5vw;
 }
@@ -465,6 +468,9 @@ nav #navright {
   }
   .middle {
     height: 40vh;
+  }
+  .middleline {
+    margin-top: 0vw;
   }
   #footer {
     height: 40vh;
