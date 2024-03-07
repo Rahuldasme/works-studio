@@ -35,7 +35,7 @@ body {
   align-items: center;
   text-align: center;
   color: white;
-  /* display: none; */
+  display: none;
 }
 #loader h1 {
   font-size: 6.9vw;
@@ -84,7 +84,7 @@ hr {
   transform: scaleX(0);
   transition: all ease 0.5s;
 }
-#navright:hover h3 hr {
+h3:hover hr {
   transform: scaleX(1);
 }
 
@@ -111,12 +111,33 @@ nav #navright {
 
 #page1 {
   height: 100vh;
+  position: relative;
   width: 100%;
   background-color: #f5e41b;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+}
+
+#page1footer {
+  overflow: hidden;
+  width: 90%;
+  position: absolute;
+  top: 93%;
+  /* left: 40%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10vw; */
+}
+
+#page1footer h3 a {
+  text-decoration: none;
+  font-family: gil;
+  color: black;
+  font-weight: 500;
 }
 #page1 h1 {
   font-size: 6.9vw;
@@ -319,9 +340,27 @@ nav #navright {
 }
 
 #footer #foot2 {
+  font-family: gil;
   height: 50%;
   width: 100%;
   background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vw 4vw;
+}
+#foot2 h3 a {
+  text-decoration: none;
+  font-family: gil;
+  font-weight: 500;
+  color: white;
+}
+#foot2 #footright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5vw;
 }
 
 #btt img {
